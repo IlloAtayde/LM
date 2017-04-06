@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CONFIGURAÇÕES</title>
+  <link rel="stylesheet" href="css/access_control.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+  <nav>
+    <div class="container">
+      <a href="wifi.html" target=""><i class="material-icons arrow_back-icon">arrow_back</i></a>
+      <span class="hide"></span>
+        <!-- <ul class="menu-inline right">
+        <li><a href="wifi.html" target=""><i class="material-icons settings-icon">refresh</i></a></li>
+        <li><a href="form.html" target=""><i class="material-icons settings-icon">settings</i></a></li>
+      </ul> -->
+    </div>
+  </nav>
+  <header class="container">
+    <h1>controle de acesso</h1>
+    <!-- <i class="material-icons wifi-icon">wifi</i> -->
+  </header>
+  <main>
+    <section class="container">
+      <form class="form">
+        <div class="">
+          <label for="SSID">SSIDs:</label>
+          <input list="SSIDs" name="SSID">
+          <datalist id="SSIDs">
+            <option value="ifpb_aluno">
+            <option value="ifpb_professor">
+            <option value="ifpb_coinfo">
+            <option value="ifpb_visitante">
+            <option value="ifpb_admin">
+            <option value="android_AP">
+            <option value="hp_wifi">
+          </datalist>
+          <label for="senha">Senha:</label>
+          <input type="password" value="" name="senha">
+          <label for="user">Usuário:</label>
+          <input type="text" value="" name="user">
+        </div>
+      <!-- <input type="submit" onclick="alert('Soliciação de conexão em andamento!')"> -->
+      </form>
+      <div class="button" onclick="alert('Soliciação de conexão em andamento!')">
+        <p>conectar</p>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <!-- <secion class="container">
+      <svg viewBox="0 0 24 24">
+        <path d="M0 0h24v24H0z" fill="none"/>
+        <path d="M1 9l2 2c4.97-4.97 13.03-4.97 18 0l2-2C16.93 2.93 7.08 2.93 1 9zm8 8l3 3 3-3c-1.65-1.66-4.34-1.66-6 0zm-4-4l2 2c2.76-2.76 7.24-2.76 10 0l2-2C15.14 9.14 8.87 9.14 5 13z"/>
+      </svg>
+      <svg fill="#000" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 0h24v24H0z" fill="none"/>
+        <path d="M1 9l2 2c4.97-4.97 13.03-4.97 18 0l2-2C16.93 2.93 7.08 2.93 1 9zm8 8l3 3 3-3c-1.65-1.66-4.34-1.66-6 0zm-4-4l2 2c2.76-2.76 7.24-2.76 10 0l2-2C15.14 9.14 8.87 9.14 5 13z"/>
+      </svg>
+    </secion> -->
+  </footer>
+</body>
+</html>

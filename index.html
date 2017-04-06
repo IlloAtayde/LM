@@ -1,92 +1,41 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-	<meta charset="UTF-8">
-	<title>Led WiFi</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>DOMOTEC</title>
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
-<style>
-	*{
-		font-family: sans-serif;
-		text-align: center;
-		color: #6E6C58;
-	}
-	.content{
-		padding: 0 300px;
-		width: 960px;
-	}
-	.titulo-header{
-		font-family: sans-serif;
-		/*text-align: center;*/
-		/*color: #6E6C58;*/
-	}
-	.header div{
-		background-color: #80ff00;
-		border-radius: 5px;
-	}
-	.div-leds a>button{
-		color: black;
-	}
-	.main{
-		background-color: yellow;
-		border-radius: 5px;
-		height: 100px;
-	}
-	/*.div-leds{*/
-		/*border-style: double;*/
-		/*border-color: red;*/
-	/*}*/
-	.div-led-off{
-		float: right;
-	}
-	.div-led-on{
-		float: left;
-	}
-	.button{
-		color: white;
-		font-size: 12px;
-		text-transform: uppercase;
-		text-decoration: none;
-		height: 25px;
-		width: 75px;
-		border-radius: 2px;
-		background-color: red;
-		border-style: 
-	}
-</style>
 <body>
-	<container class="content">
-		<header class="header">
-			<div>
-				<h1 class="titulo-header">ESP8266 Monitorar e Controlar variáveis físicas através de uma conexão sem fio</h1>
-			</div>
-		</header>	
-		<main class="main">
-			<div class="div-leds">
-				<div class="div-led-on">
-					<h4>LIGAR</h4>
-					<a href="/LED_A=ON"><button>LED A</button></a>
-					<a href="/LED_B=ON"><button>LED B</button></a>
-					<a href="/LED_C=ON"><button>LED C</button></a>
-					<a href="/LED_D=ON"><button>LED D</button></a>
-				</div>
-				<div class="div-led-off">
-					<h4>DESLIGAR</h4>
-					<a href="/LED_A=OFF"><button>LED A</button></a>
-					<a href="/LED_B=OFF"><button>LED B</button></a>
-					<a href="/LED_C=OFF"><button>LED C</button></a>
-					<a href="/LED_D=OFF"><button>LED D</button></a>
-				</div>
-			</div>
-			<a class="button" href="/LED_A=OFF">led a</a>
-			<div class="led-status">
+  <nav>
+    <div class="container">
+      <ul class="menu-inline right">
+        <li><a href="painel_ctrl.html">painel de controle</a></li>
+        <li><a href="sobre.html">sobre</a></li>
+        <li><a href="contato.html">contato</a></li>
+      </ul>
+      <span class="hide"></span>
+    </div>
+  </nav>
+  <header class="container">
+    <h1>automação residencial domotec</h1>
+  </header>
+  <main class="container">
+    <section>
+      <div class="container">
+        <img src="img/domotica_a.png" alt=""/>
+      </div>
+    </section>
+    <section class="container">
+      <article class="def">
 
-			</div>
-		</main>
-		<footer>
-			<div>
+      </article>
+    </section>
+  </main>
+  <footer>
 
-			</div>
-		</footer>
-	</container>
+  </footer>
 </body>
 </html>

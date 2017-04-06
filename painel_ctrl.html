@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>PAINEL DE CONTROLE</title>
+  <link rel="stylesheet" href="css/painel_ctrl.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+  <nav>
+    <div class="container">
+      <a href="wifi.html" target=""><i class="material-icons arrow_back-icon">wifi</i></a>
+      <span class="hide"></span>
+    </div>
+  </nav>
+  <header class="container">
+    <h1>painel de controle</h1>
+  </header>
+  <main>
+    <section class="container">
+      <table id="t01">
+        <tr>
+          <th colspan="3">climatização</th>
+        </tr>
+        <tr>
+          <td><label for="vent_a">Sala</label><input type="checkbox" name="vent_a" value=""></td>
+          <td><label for="vent_b">Quarto</label><input type="checkbox" name="vent_b" value=""></td>
+          <td><label for="vent_c">Cozinha</label><input type="checkbox" name="vent_c" value=""></td>
+        </tr>
+        <tr>
+          <th colspan="3">iluminação</th>
+        </tr>
+        <tr>
+          <td><label for="lamp_a">Sala</label><input type="checkbox" name="lamp_a" value=""></td>
+          <td><label for="lamp_b">Quarto</label><input type="checkbox" name="lamp_b" value=""></td>
+          <td><label for="lamp_c">Cozinha</label><input type="checkbox" name="lamp_c" value=""></td>
+        </tr>
+        <tr>
+          <th colspan="3">sensores</th>
+        </tr>
+        <tr>
+          <td><label for="sen_a">Sala</label><input type="checkbox" name="sen_a" value=""></td>
+          <td><label for="sen_b">Quarto</label><input type="checkbox" name="sen_b" value=""></td>
+          <td><label for="sen_c">Cozinha</label><input type="checkbox" name="sen_c" value=""></td>
+        </tr>
+      </table>
+      <div class="button" onclick="alert('Aplicando configurações!')">
+        <p class="button-text">aplicar</p>
+      </div>
+    </section>
+  </main>
+  <footer>
+
+  </footer>
+</body>
+</html>

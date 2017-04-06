@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+@keyframes wifi_symbol {
+  from {opacity: 0.1;}
+  to {opacity: 0.2;}
+}
+
+@keyframes icon_animation {
+  0%{color: #008b45;}
+  9%{color: #00cd00;}
+  18%{color: #0e0;}
+  27%{color: #0f0;}
+  36%{color: #ffffe0;}
+  45%{color: #ff0;}
+  54%{color: #ffd700;}
+  63%{color: #eedd82;}
+  72%{color: #f08080;}
+  81%{color: #ff6347;}
+  90%{color: #ff4500;}
+  100%{color: #f00;}
+}
+
+.settings-icon, .arrow_back-icon, .refresh-icon {
+  padding-top: 10px;
+  font-size: 3em !important;
+  color:white;
+  text-shadow:2px 2px 4px #000000;
+}
+
+i {
+  width: 35px;
+  height: 60px;
+  line-height: 60px;
+  vertical-align: middle;
+}
+
+.menu-inline.right {
+  float: right;
+}
+
+.menu-inline {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.1em;
+  line-height: 70px;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.menu-inline li {
+  display: inline-block;
+  line-height: 70px;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0 5px;
+}
+
+li>a {
+  color: white;
+  text-decoration: none;
+}
+
+ul {
+  /*width: 80%;*/
+  margin: 0 auto;
+  padding: 0px;
+}
+
+main>div {
+  margin: 0 auto;
+}
+
+
+body {
+  font-family: 'Oswald', sans-serif;
+  margin: 0;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* NAV */
+nav {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 70px;
+  background: linear-gradient(#638243, #091701);
+}
+.hide::before {
+  /*float: right;*/
+  text-align: left;
+  line-height: 70px;
+  content: "DOMOTEC";
+  font-weight: bold;
+  font-size: 1.3em;
+  width: 180px;
+  color: #fff;
+}
+
+/* HEADER */
+h1 {
+  margin: 120px auto 0;
+  /*margin-top: 120px;*/
+  color: #3c3f56;
+  height: 100px;
+  width: 80%%;
+  line-height: 100px;
+  border: 1px solid grey;
+  border-radius: 3px;
+  box-shadow: 2px 2px 2px grey;
+  transform: rotate(-1deg);
+  background: linear-gradient(#b0c797, #4b5248);
+  vertical-align: middle;
+  text-transform: uppercase;
+  text-align: center;
+}
+@media (max-width: 799px){
+  h1 {
+    font-size: 1.5em;
+  }
+}
+
+section div {
+  height: 250px;
+}
+section div>img {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+}
+
+article p {
+  font-size: 1.5em;
+  text-align: justify;
+}
+
+@media (max-width: 499px){
+  body {
+    background-color: #BFBCBC;
+  }
+  .hide::before {
+    display: none;
+  }
+  header {
+    display: none;
+  }
+  section div>img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /*width: 500px;
+    height: 500px;*/
+    margin-top: -50%;
+    margin-left: -50%;
+  }
+
+
+  article p {
+    font-size: 1.5em;
+    color: white;
+  }
+  table {
+    margin: 75px auto 25px;
+  }
+  footer {
+    display: none;
+  }
+}
+
+@media (max-width: 359px){
+  .hide::before {
+    font-size: 1em;
+}
